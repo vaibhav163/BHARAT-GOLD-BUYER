@@ -1,0 +1,335 @@
+/* Branches Section */
+.branches-section {
+  background: linear-gradient(135deg, #f8f6f4 0%, #ede8e3 100%);
+  padding: 80px 20px;
+  min-height: 600px;
+}
+
+.branches-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Left Content */
+.branches-left {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.branches-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #6B4E3D;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.branches-description {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 350px;
+  margin: 0;
+}
+
+.see-more-btn {
+  background: transparent;
+  border: 2px solid #D2B48C;
+  color: #8B4513;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  width: fit-content;
+}
+
+.see-more-btn:hover {
+  background: #D2B48C;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(210, 180, 140, 0.4);
+}
+
+/* Branches Grid */
+.branches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Branch Card */
+.branch-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.branch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Map Container */
+.map-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #e8f5e8, #f0f8f0);
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+.map-mockup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e8f5e8 0%, #d4edd4 50%, #c8e6c8 100%);
+}
+
+.map-pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  z-index: 5;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.map-roads {
+  position: absolute;
+  inset: 0;
+}
+
+.road {
+  position: absolute;
+  background: rgba(150, 150, 150, 0.6);
+  border-radius: 1px;
+}
+
+.road-1 {
+  width: 3px;
+  height: 100%;
+  left: 30%;
+  top: 0;
+}
+
+.road-2 {
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 60%;
+}
+
+.road-3 {
+  width: 3px;
+  height: 100%;
+  right: 25%;
+  top: 0;
+}
+
+.map-labels {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.location-label {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.view-larger-map {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #1a73e8;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-larger-map:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.google-logo {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+  font-family: 'Arial', sans-serif;
+}
+
+.map-controls {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  right: 10px;
+  font-size: 9px;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Branch Info */
+.branch-info {
+  padding: 24px;
+}
+
+.branch-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #6B4E3D;
+  margin: 0 0 12px 0;
+}
+
+.branch-address {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .branches-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .branches-left {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .branches-title {
+    font-size: 3rem;
+  }
+  
+  .branches-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .branches-section {
+    padding: 60px 15px;
+  }
+  
+  .branches-title {
+    font-size: 2.5rem;
+  }
+  
+  .branches-description {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  
+  .branches-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .branch-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .map-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .branches-title {
+    font-size: 2rem;
+  }
+  
+  .branch-info {
+    padding: 20px;
+  }
+  
+  .branch-name {
+    font-size: 1.2rem;
+  }
+  
+  .branch-address {
+    font-size: 13px;
+  }
+  
+  .map-container {
+    height: 160px;
+  }
+}
+
+/* Animation for branch cards */
+.branch-card {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.branch-card:nth-child(1) { animation-delay: 0.1s; }
+.branch-card:nth-child(2) { animation-delay: 0.2s; }
+.branch-card:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Additional styling for better map appearance */
+.map-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 40%, rgba(34, 139, 34, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(70, 130, 180, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Enhanced hover effects for interactive elements */
+.view-larger-map {
+  transition: all 0.3s ease;
+}
+
+.view-larger-map:hover {
+  background: rgba(26, 115, 232, 0.1);
+  color: #1557b0;
+}
