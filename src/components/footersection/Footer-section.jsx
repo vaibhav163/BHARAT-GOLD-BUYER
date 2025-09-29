@@ -90,7 +90,7 @@ export default function FooterSection() {
             
             <div className="contact-item">
               <Mail className="contact-icon" />
-              <a href="bharatgoldbuyer@gmail.com" className="contact-text">
+              <a href="mailto:bharatgoldbuyer@gmail.com" className="contact-text">
                 bharatgoldbuyer@gmail.com
               </a>
             </div>
@@ -98,7 +98,9 @@ export default function FooterSection() {
             <div className="contact-item">
               <Clock className="contact-icon" />
               <span className="contact-text">
-                Open All 7 Days | 10:00 AM – 7:00 PM
+                <a href='https://maps.app.goo.gl/2SisYmVYCUaQmpSZ7' target='_blank' rel='noreferrer' className='address-link'>
+                  Open All 7 Days | 10:00 AM – 8:00 PM
+                </a>
               </span>
             </div>
           </div>

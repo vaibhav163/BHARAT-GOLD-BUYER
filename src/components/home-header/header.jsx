@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ChevronDown, ArrowRight, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './header.css';
+// import Hamburger from "../hamburger/hamburger"
+import Toggler from '../toggler/toggler';
 
 export default function Header() {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  // const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
     <div className="main-container">
@@ -15,41 +18,51 @@ export default function Header() {
       </div>
 
       {/* Navigation */}
-      <nav className="navbar">
-        <div className="logo-section">
-          <div className="logo-circle">
-            <span>BGB</span>
-          </div>
-          <div className="logo-text">
-            <h1>BHARAT</h1>
-            <h2>GOLD BUYER</h2>
-          </div>
-        </div>
-
-        <div className="nav-menu">
-          <a href="#" className="nav-link">Home</a>
-          <a href="#" className="nav-link">About Us</a>
-          <div className={`dropdown ${dropdownOpen ? 'active' : ''}`}>
-            <button 
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="nav-link dropdown-btn"
-            >
-              <span>What We Buy</span>
-              <ChevronDown className="dropdown-arrow" />
-            </button>
-            <div className="dropdown-content">
-              <a href="#">Gold Jewelry</a>
-              <a href="#">Silver Items</a>
-              <a href="#">Diamonds</a>
-              <a href="#">Coins</a>
+      {/* <Hamburger /> */}
+        <nav className="navbar">
+          <div className="logo-section">
+            <div className="logo-circle">
+          <span>BGB</span>
+            </div>
+            <div className="logo-text">
+          <h1>BHARAT</h1>
+          <h2>GOLD BUYER</h2>
             </div>
           </div>
-          <a href="#" className="nav-link">Blog</a>
-          <button className="contact-btn">Contact Us</button>
-        </div>
-      </nav>
+          <Toggler />
+          {/* <div className={`nav-menu${dropdownOpen ? ' dropdown-open' : ''}`}>
+            <Link to="/#" className="nav-link">Home</Link>
+            <Link to="/aboutus" className="nav-link">About Us</Link>
+            <div className={`dropdown ${dropdownOpen ? 'active' : ''}`}>
+          <button 
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+            className="nav-link dropdown-btn"
+          >
+            <span>What We Buy</span>
+            <ChevronDown className="dropdown-arrow" />
+          </button>
+          <div className="dropdown-content">
+            <Link to="/cash-against-gold" className="dropdown-item">Cash against Gold</Link>
+            <Link to="/cash-for-silver" className="dropdown-item">Cash for Silver</Link>
+            <Link to="/cash-for-diamond" className="dropdown-item">Cash for Diamonds</Link>
+            <Link to="/sell-gold-coins" className="dropdown-item">Sell Gold Coins</Link>
+          </div>
+            </div>
+            <Link to="/blog" className="nav-link">Blog</Link>
+            <Link to="/contactus"><button className="contact-btn">Contact Us</button></Link>
+          </div> */}
 
-      {/* Main Content */}
+          {/* Hamburger for mobile */}
+          {/* <button
+            className="mobile-menu-btn"
+            aria-label="Toggle navigation"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
+            <div className={`hamburger${dropdownOpen ? ' open' : ''}`}>
+              {/* <span>{Hamburger}</span> 
+            </div>
+          </button> */}
+        </nav>
       <main className="main-content">
         {/* Left Content */}
         <div className="content-left">
@@ -107,13 +120,6 @@ export default function Header() {
               </div>
             </div>
           </div>
-
-          {/* Floating coins */}
-          <div className="floating-coins">
-            <div className="coin coin-1"></div>
-            <div className="coin coin-2"></div>
-            <div className="coin coin-3"></div>
-          </div>
         </div>
       </main>
 
@@ -123,15 +129,6 @@ export default function Header() {
         <div className="jewelry-pattern pattern-1"></div>
         <div className="jewelry-pattern pattern-2"></div>
       </div>
-
-      {/* Mobile Menu Button */}
-      <button className="mobile-menu-btn">
-        <div className="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </button>
     </div>
   );
 }

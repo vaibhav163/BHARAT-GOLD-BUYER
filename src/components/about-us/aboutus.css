@@ -1,0 +1,423 @@
+/* Header Section */
+.header-section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Hero Container */
+.hero-container {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 0 0 30px 30px;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(135deg, #DAA520, #FFD700, #B8860B);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, 
+        rgba(218, 165, 32, 0.7), 
+        rgba(255, 215, 0, 0.6), 
+        rgba(184, 134, 11, 0.8)
+    );
+}
+
+/* Navigation */
+.hero-nav {
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #DAA520, #FFD700);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #6B4E3D;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-text h1,
+.logo-text h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.logo-text h1 {
+    color: white;
+}
+.logo-text h2 {
+    color: #FFD700;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 12px 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    padding: 8px 16px;
+    color: #6B4E3D;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.nav-link:hover {
+    background: rgba(218, 165, 32, 0.1);
+    color: #8B4513;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.nav-dropdown.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    min-width: 150px;
+    z-index: 20;
+    margin-top: 8px;
+    padding: 8px 0;
+}
+
+.nav-dropdown.active .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 16px;
+    color: #6B4E3D;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(218, 165, 32, 0.1);
+    color: #8B4513;
+}
+
+.contact-btn {
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+}
+
+.contact-btn:hover {
+    background: linear-gradient(135deg, #A0522D, #8B4513);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 5;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+/* Content Section */
+.content-section {
+    background: linear-gradient(135deg, #f8f6f4 0%, #ede8e3 100%);
+    padding: 60px 40px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 5;
+}
+
+.content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Decorative Card Section */
+.decorative-card-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:65vw;
+    border:2px solid #DAA520;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.decorative-card {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Services Info */
+.services-info {
+    border:3px solid #DAA520;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #6B4E3D;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.services-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+.services-description strong {
+    color: #8B4513;
+    font-weight: 600;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateX(5px);
+}
+
+.service-icon {
+    width: 20px;
+    height: 20px;
+    color: #DAA520;
+}
+
+.service-name {
+    font-size: 16px;
+    color: #6B4E3D;
+    font-weight: 500;
+}
+
+/* CTA Box */
+.cta-box {
+    background: linear-gradient(135deg, #FFF8DC, #F5F5DC);
+    border: 2px solid #DAA520;
+    border-radius: 15px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cta-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #6B4E3D;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #DAA520, #FFD700);
+    color: #6B4E3D;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.3);
+    align-self: flex-start;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(218, 165, 32, 0.4);
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+}
+
+.hamburger-sign{
+    display:none;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-nav {
+        padding: 15px 20px;
+    }
+    .content-section {
+        padding: 40px 20px;
+    }
+    .content-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .decorative-card-section {
+        order: -1;
+        width:100vw
+    }
+    .services-title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    .hamburger-sign {
+        display: block;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-container {
+        height: 50vh;
+        min-height: 350px;
+    }
+    .content-section {
+        padding: 30px 15px;
+    }
+    .services-title {
+        font-size: 2rem;
+    }
+    .cta-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-nav {
+        padding: 10px 15px;
+    }
+    .logo-circle {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .logo-text h1,
+    .logo-text h2 {
+        font-size: 18px;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+}

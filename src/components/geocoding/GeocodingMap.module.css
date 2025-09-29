@@ -1,0 +1,141 @@
+/* GeocodingMap.module.css */
+
+.fullPageContainer {
+  height: 100vh; /* Make the component fill the viewport height */
+  width: 100vw;  /* Make the component fill the viewport width */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack map and controls vertically if needed */
+  position: relative; /* For absolute positioning of controls */
+}
+
+.map {
+  height: 100%; /* Map fills available space within fullPageContainer */
+  width: 100%;
+}
+
+.loadingMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5em;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+/* --- Controls Styling --- */
+.controlsContainer {
+  position: absolute; /* Position controls over the map */
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  display: flex;
+  flex-wrap: wrap; /* Allow controls to wrap on smaller screens */
+  align-items: center;
+  gap: 10px; /* Space between control elements */
+  max-width: calc(100% - 20px); /* Adjust max-width if needed */
+  z-index: 10; /* Ensure controls are above the map */
+}
+
+
+.inputText {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 0; /* Managed by gap in container */
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  line-height: 40px;
+  min-width: 250px; /* Adjust min-width for input field */
+  flex-grow: 1; /* Allow it to grow */
+}
+
+.button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 0; /* Managed by gap in container */
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  height: 40px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent button text from wrapping */
+}
+.button:hover {
+  background: rgb(235, 235, 235);
+}
+.buttonPrimary {
+  background-color: #1a73e8;
+  color: white;
+}
+.buttonPrimary:hover {
+  background-color: #1765cc;
+}
+.buttonSecondary {
+  background-color: white;
+  color: #1a73e8;
+}
+.buttonSecondary:hover {
+  background-color: #d2e3fc;
+}
+
+.responseContainer {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent */
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin-top: 10px; /* Separate from buttons */
+  padding: 0.5em; /* Padding for content */
+  font: 400 14px 'Roboto Mono', 'Courier New', monospace; /* Monospace for JSON */
+  overflow: auto; /* Enable scroll if content is too large */
+  max-height: 30vh; /* Limit height of response container */
+  max-width: 90%; /* Limit width */
+  font-size: small;
+  flex-basis: 100%; /* Make it take full width in flex container */
+  box-sizing: border-box; /* Include padding in width/height */
+}
+.response {
+  margin: 0; /* Remove default pre margin */
+  white-space: pre-wrap; /* Preserve whitespace and wrap long lines */
+  word-wrap: break-word; /* Break long words */
+}
+
+.instructions {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin-top: 10px; /* Separate from other controls */
+  padding: 1rem;
+  font: 400 16px Roboto, Arial, sans-serif;
+  font-size: medium;
+  flex-basis: 100%; /* Make it take full width in flex container */
+  box-sizing: border-box; /* Include padding in width/height */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .controlsContainer {
+    flex-direction: column; /* Stack controls vertically */
+    align-items: stretch; /* Stretch items to full width */
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    max-width: unset; /* Remove max-width constraint */
+  }
+
+  .inputText, .button, .instructions, .responseContainer {
+    width: 100%; /* Full width on smaller screens */
+    min-width: unset;
+    margin: 0; /* Reset margins from flex gap */
+  }
+
+  .responseContainer {
+    max-height: 25vh; /* Adjust max height for smaller screens */
+  }
+}

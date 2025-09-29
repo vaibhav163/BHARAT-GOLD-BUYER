@@ -1,26 +1,33 @@
 import React from 'react';
-import Header from './components/home-header/header';
-// import { Route, Routes ,Link } from 'react-router-dom';
-import FeaturesGridSection from './components/home-header/Featuregrid';
-import Coup from './components/home-header/coup';
-import BranchesSection from './components/home-header/Branch-section';
-import ServicesSection from './components/home-header/Servicesection';
-import FAQSection from './components/home-header/FAQsection';
-import FooterSection from './components/footersection/Footer-section';
-import DifferenceSection from './components/home-header/Differencesection';
-
+import { Route, Routes ,Link } from 'react-router-dom';
+import Home from './components/home-header/home';
+import Aboutus from './components/about-us/Aboutus';
+import Blog from './components/blog/Blog';
+import CashAgainstGoldHeader from './components/cash-against gold/CashAgainstGold';
+import Contactus from './components/contactus/contact-us';
+import Cashfordiamond from './components/cash for diamond/cashfordiamond';
+import Cashforsilver from './components/cash for silver/Cashforsilver';
+import Cellgold from './components/cash for silver gold coins/Cashforcoins';
+import './App.css';
+import GeocodingMap from './components/geocoding/geocodingMap';
+import GoldBuyerLandingPage from './components/home-header/GoldBuyerLandingPage';
+// import Toggler from './components/toggler/toggler';
 function App() {
 
   return (
     <>
-    <Header />
-    <FeaturesGridSection />
-    <Coup />
-    <BranchesSection />
-    <ServicesSection />
-    <FAQSection />
-    <FooterSection />
-    <DifferenceSection />
+      {/* <GoldBuyerLandingPage /> */}
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/aboutus' element={<Aboutus />} />
+      <Route path='/blog' element={<Blog />} />
+      <Route path='/cash-against-gold' element={<CashAgainstGoldHeader />} />
+      <Route path='/contactus' element={<Contactus />} />
+      <Route path="cash-for-silver" element={<Cashforsilver />} />
+      <Route path='/cash-for-diamond' element={<Cashfordiamond />} />
+      <Route path='/sell-gold-coins' element={<Cellgold />} />
+    </Routes>
+    {/* <GeocodingMap /> */}
     </>
   );
 }

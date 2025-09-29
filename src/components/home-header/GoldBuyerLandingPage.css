@@ -1,0 +1,296 @@
+/* src/components/GoldBuyerLandingPage.css */
+
+/* General Body/Container Styles */
+.landing-page-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Ensures it takes at least full viewport height */
+    overflow: hidden; /* Helps contain absolute positioned background */
+    font-family: Arial, sans-serif; /* Example font */
+    color: #fff; /* Default text color for hero section */
+}
+
+/* Background Image with Overlay */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5); /* Darken the background image */
+    z-index: -1; /* Place it behind other content */
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px; /* Adjust padding as needed */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Sticky header */
+    top: 0;
+    z-index: 10;
+}
+
+.logo-section .brand-logo {
+    height: 40px; /* Adjust logo size */
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin-left: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333; /* Dark text for navigation links */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #e6b800; /* Gold color on hover */
+}
+
+.contact-button {
+    background-color: #a0522d; /* Brownish-gold tone from original design */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #8b4513; /* Darker brown on hover */
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the middle */
+    padding: 80px 50px; /* Adjust padding */
+    min-height: calc(100vh - 70px); /* Fill remaining viewport height */
+    z-index: 1; /* Above the background overlay */
+    color: #fff; /* Text color for hero content */
+}
+
+.hero-content {
+    max-width: 600px; /* Limit width of text content */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.hero-title {
+    font-size: 3.5em; /* Large heading */
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 800; /* Extra bold */
+}
+
+.cta-buttons {
+    margin-top: 30px;
+}
+
+.get-started-button {
+    background-color: #e6b800; /* Gold color for CTA */
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-started-button:hover {
+    background-color: #ffda44; /* Lighter gold on hover */
+    transform: translateY(-2px);
+}
+
+.get-started-button .arrow-icon {
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+.trusted-text {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Hero Side Elements (Right part of Hero) */
+.hero-side-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align elements to the right */
+    gap: 30px; /* Space between happy clients and small ad */
+}
+
+.happy-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.client-avatars {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.client-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: -10px; /* Overlap avatars */
+    object-fit: cover;
+}
+
+.client-avatar:first-child {
+    margin-left: 0;
+}
+
+.more-clients-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e6b800; /* Gold background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    border: 2px solid #fff;
+    margin-left: -10px;
+}
+
+.client-count {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.small-ad-card {
+    background-color: #fff; /* White background for the ad card */
+    border-radius: 10px;
+    overflow: hidden; /* Clip image corners */
+    width: 280px; /* Fixed width for the ad card */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #333; /* Dark text inside ad card */
+}
+
+.ad-image {
+    width: 100%;
+    height: 120px; /* Fixed height for ad image */
+    object-fit: cover; /* Cover the area */
+}
+
+.ad-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ad-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.read-more-button {
+    background: none;
+    border: none;
+    color: #a0522d; /* Brownish-gold from contact button */
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.read-more-button:hover {
+    color: #8b4513;
+}
+
+.read-more-button .arrow-icon {
+    margin-left: 5px;
+    font-size: 1.1em;
+}
+
+/* --- Responsive Design (Basic Example) --- */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.8em;
+    }
+    .hero-section {
+        padding: 60px 30px;
+    }
+    .header {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .nav-menu ul {
+        margin-top: 10px;
+        flex-wrap: wrap; /* Allow nav items to wrap */
+        justify-content: center;
+    }
+    .nav-menu li {
+        margin: 5px 15px;
+    }
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .hero-side-elements {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2em;
+    }
+    .get-started-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    .client-avatars {
+        justify-content: center;
+    }
+}

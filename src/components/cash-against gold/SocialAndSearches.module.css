@@ -1,0 +1,115 @@
+/* SocialAndSearches.module.css */
+
+.container {
+  background-color: #f8f5ed; /* Light beige background from the image */
+  padding: 40px 20px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  max-width: 100%; /* Ensure it doesn't overflow */
+}
+
+.sectionTitle {
+  font-size: 2.2em; /* Larger title for "Follow Us" and "Popular Searches" */
+  font-weight: bold;
+  color: #4a3e2a; /* Dark brown color from the image */
+  margin-bottom: 25px;
+  margin-top: 40px; /* Space above "Popular Searches" if following "Follow Us" */
+}
+
+/* Adjust margin-top for the very first title if needed */
+.container > .sectionTitle:first-of-type {
+  margin-top: 0;
+}
+
+/* Social Links Styling */
+.socialLinks {
+  display: flex;
+  gap: 12px; /* Space between icons */
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Allow icons to wrap on small screens */
+}
+
+.socialIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px; /* Size of the circular button */
+  height: 45px;
+  border-radius: 50%;
+  background-color: #6a5a4a; /* Darker brown for icons */
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: #8c7b67; /* Lighter brown on hover */
+}
+
+/* Popular Searches Styling */
+.popularSearchesList {
+  list-style: none; /* Remove default list bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.searchItem {
+  display: flex; /* Use flexbox for custom bullet and text alignment */
+  align-items: flex-start; /* Align text to the top of the bullet if it wraps */
+  margin-bottom: 15px; /* Space between list items */
+}
+
+.bullet {
+  width: 8px; /* Size of the custom bullet */
+  height: 8px;
+  min-width: 8px; /* Prevent shrinking */
+  min-height: 8px; /* Prevent shrinking */
+  background-color: #4a3e2a; /* Dark brown bullet */
+  border-radius: 50%;
+  margin-top: 8px; /* Adjust to vertically align with text */
+  margin-right: 15px; /* Space between bullet and text */
+}
+
+.searchLink {
+  font-size: 1.1em;
+  color: #4a3e2a; /* Dark brown text color */
+  text-decoration: none;
+  line-height: 1.4; /* Improve readability of multi-line items */
+  transition: color 0.3s ease;
+}
+
+.searchLink:hover {
+  color: #a08c70; /* Lighter brown on hover */
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2em;
+  }
+  .socialIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1em;
+  }
+  .searchLink {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.8em;
+  }
+  .socialLinks {
+    justify-content: center; /* Center social icons on very small screens */
+  }
+  .searchItem {
+    margin-bottom: 12px;
+  }
+  .searchLink {
+    font-size: 0.95em;
+  }
+}

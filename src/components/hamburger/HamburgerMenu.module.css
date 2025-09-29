@@ -1,0 +1,98 @@
+/* HamburgerMenu.module.css */
+
+.hamburgerContainer {
+  /* This container helps organize the fixed elements */
+  z-index: 1000;
+}
+
+.hamburgerButton {
+  position: fixed; /* Keeps button on screen */
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  z-index: 1001; 
+  height:50px;
+  width:50px;
+  padding:10px 0px 10px 10px;;
+  border: 2px solid #060606;
+  border-radius: 50%;
+  background-color: white;
+
+  
+}
+
+.line {
+  width: 70%;
+  height: 3px;
+  background-color: #060606; /* Color of the hamburger lines */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* --- Hamburger Animation --- */
+.hamburgerButton.open .line:nth-child(1) {
+  transform: translateY(13.5px) rotate(45deg);
+}
+
+.hamburgerButton.open .line:nth-child(2) {
+  opacity: 0; 
+}
+
+.hamburgerButton.open .line:nth-child(3) {
+  transform: translateY(-13.5px) rotate(-45deg);
+}
+
+/* --- Navigation Menu Styling --- */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Start off-screen */
+  width: 300px; 
+  max-width: 80vw;
+  height: 100vh;
+  background-color: #f0f0f0; 
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  padding-top: 80px; 
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.menu.visible {
+  right: 0; /* Slide into view */
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuList li {
+  padding: 15px 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menuList a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2em;
+  display: block;
+}
+
+/* --- Overlay Styling --- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
+}
