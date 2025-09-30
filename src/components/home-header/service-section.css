@@ -239,6 +239,9 @@
 
 /* Mobile Layout */
 @media (max-width: 768px) {
+  *{
+    width:100%;
+  }
   .services-section {
     padding: 60px 15px;
   }
@@ -298,6 +301,9 @@
 
 /* Tablet Layout */
 @media (max-width: 1024px) and (min-width: 769px) {
+  *{
+    width:100%;
+  }
   .services-grid {
     gap: 15px;
   }
@@ -313,6 +319,9 @@
 
 /* Large Desktop Layout */
 @media (min-width: 1200px) {
+  *{
+    width:100%;
+  }
   .services-grid {
     gap: 25px;
   }
