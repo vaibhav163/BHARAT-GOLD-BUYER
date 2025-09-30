@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './HamburgerMenu.module.css'; // Import CSS Module
+import { Link } from 'react-router-dom';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,10 +25,16 @@ const HamburgerMenu = () => {
       {/* Navigation Menu (Slides In/Out) */}
       <nav className={`${styles.menu} ${isOpen ? styles.visible : ''}`}>
         <ul className={styles.menuList}>
-          <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-          <li><a href="#about" onClick={toggleMenu}>About</a></li>
-          <li><a href="#services" onClick={toggleMenu}>Services</a></li>
-          <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+          <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+          <li><Link to="/aboutus" onClick={toggleMenu}>About</Link></li>
+          <li>Services</li>
+          <li>
+            <Link to="/cash-against-gold" onClick={toggleMenu}>Cash Against Gold</Link></li>
+            <li><Link to="/cash-for-silver" onClick={toggleMenu}>Cash For Silver</Link></li>
+            <li><Link to="/cash-for-diamond" onClick={toggleMenu}>Cash For Diamond</Link></li>
+            <li><Link to="/sell-gold-coins" onClick={toggleMenu}>Sell Gold Coins</Link></li>
+          <li><Link to="/blog" onClick={toggleMenu}>Blog</Link></li>
+          <li><Link to="/contactus" onClick={toggleMenu}>Contact</Link></li>
         </ul>
       </nav>
 
