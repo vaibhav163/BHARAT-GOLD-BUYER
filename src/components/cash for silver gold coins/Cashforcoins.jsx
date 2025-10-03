@@ -46,7 +46,6 @@ export default function Cashforcoins() {
       </div>
 
       {/* Content Section */}
-      <div className="content-section">
         <div className="content-container">
           {/* Left Side - Decorative Card */}
           <div className="decorative-card-section">
@@ -247,7 +246,7 @@ export default function Cashforcoins() {
             <SocialAndSearches />
           </div>
         </div>
-      </div>
+     
       <Footersection />
     </div>
   );

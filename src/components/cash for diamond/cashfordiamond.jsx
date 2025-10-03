@@ -45,7 +45,7 @@ const CashForDiamond = () => {
       </div>
 
       {/* Content Section */}
-      <div className="content-section">
+
         <div className="content-container">
           {/* Left Side - Decorative Card */}
           <div className="decorative-card-section">
@@ -306,7 +306,6 @@ const CashForDiamond = () => {
             <SocialAndSearches />
           </div>
         </div>
-      </div>
       <Footersection />
     </div>
   );

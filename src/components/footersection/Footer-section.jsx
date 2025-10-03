@@ -4,25 +4,25 @@ import './footer-section.css';
 
 export default function FooterSection() {
   const quickLinks = [
-    { name: "Home", href: "#" },
-    { name: "About Us", href: "#" },
-    { name: "Our Blog", href: "#" },
-    { name: "Contact Us", href: "#" }
+    { name: "Home", href: "/home" },
+    { name: "About Us", href: "/aboutus" },
+    { name: "Our Blog", href: "/blog" },
+    { name: "Contact Us", href: "/contactus" }
   ];
 
   const services = [
-    { name: "Cash Against Gold", href: "#" },
-    { name: "Cash For Silver", href: "#" },
-    { name: "Cash For Diamond", href: "#" },
-    { name: "Cash For Silver Gold Coins", href: "#" }
+    { name: "Cash Against Gold", href: "/cash-against-gold" },
+    { name: "Cash For Silver", href: "/cash-for-silver" },
+    { name: "Cash For Diamond", href: "/cash-for-diamond" },
+    { name: "Cash For Silver Gold Coins", href: "/cash-for-silver-gold-coins" }
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", name: "Facebook" },
-    { icon: Instagram, href: "#", name: "Instagram" },
-    { icon: Twitter, href: "#", name: "Twitter" },
-    { icon: Linkedin, href: "#", name: "LinkedIn" },
-    { icon: Youtube, href: "#", name: "YouTube" }
+    { icon: Facebook, href: "https://www.facebook.com/share/17AHorta7c/", name: "Facebook" },
+    { icon: Instagram, href: "https://maps.app.goo.gl/2SisYmVYCUaQmpSZ7", name: "Instagram" },
+    { icon: Twitter, href: "https://maps.app.goo.gl/2SisYmVYCUaQmpSZ7", name: "Twitter" },
+    { icon: Linkedin, href: "https://maps.app.goo.gl/2SisYmVYCUaQmpSZ7", name: "LinkedIn" },
+    { icon: Youtube, href: "https://maps.app.goo.gl/2SisYmVYCUaQmpSZ7", name: "YouTube" }
   ];
 
   return (

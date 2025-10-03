@@ -4,7 +4,7 @@ import './contactus.css';
 import Footersection from '../footersection/Footer-section';
 import Logo from '../../assets/logo.png';
 import Toggler from '../toggler/toggler';
-import aboutus from '../../assets/aboutus.png';
+import contactus from '../../assets/contactus.png';
 import { Link } from 'react-router-dom';
 
 
@@ -117,7 +117,7 @@ const ContactUs = () => {
     <div className="header-section">
       <div className="hero-container">
         <div className="hero-background">
-          <img src={aboutus} alt="we buy silver" className="hero-bg-image" />
+          <img src={contactus} alt="we buy silver" className="hero-bg-image" />
           <div className="hero-overlay"></div>
         </div>
 
