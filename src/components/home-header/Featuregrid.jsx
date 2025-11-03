@@ -1,5 +1,9 @@
 import React from 'react';
 import './features-grid.css';
+import Att from '../../assets/att.png';
+import Ip from '../../assets/ip.png';
+import Tp from '../../assets/tp.png';
+import Cts from '../../assets/cts.png';
 
 export default function FeaturesGridSection() {
   return (
@@ -9,7 +13,7 @@ export default function FeaturesGridSection() {
         <div className="feature-card">
           <div className="feature-icon">
             <div className="icon-circle">
-              <span className="icon-symbol">⏰</span>
+              <span className="icon-symbol"><img src={Cts} alt="Feature 1" /></span>
             </div>
           </div>
           <h3 className="feature-title">Certified & Trained Staff</h3>
@@ -23,7 +27,7 @@ export default function FeaturesGridSection() {
         <div className="feature-card">
           <div className="feature-icon">
             <div className="icon-circle">
-              <span className="icon-symbol">🔬</span>
+              <span className="icon-symbol"><img src={Att} alt="Feature 2" /></span>
             </div>
           </div>
           <h3 className="feature-title">Advanced Testing Technology</h3>
@@ -37,7 +41,7 @@ export default function FeaturesGridSection() {
         <div className="feature-card">
           <div className="feature-icon">
             <div className="icon-circle">
-              <span className="icon-symbol">📋</span>
+              <span className="icon-symbol"><img src={Tp} alt="Feature 3" /></span>
             </div>
           </div>
           <h3 className="feature-title">Transparent Process</h3>
@@ -51,7 +55,7 @@ export default function FeaturesGridSection() {
         <div className="feature-card">
           <div className="feature-icon">
             <div className="icon-circle">
-              <span className="icon-symbol">💳</span>
+              <span className="icon-symbol"><img src={Ip} alt="Feature 4" /></span>
             </div>
           </div>
           <h3 className="feature-title">Instant Payments</h3>

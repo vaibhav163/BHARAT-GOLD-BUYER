@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes ,Link } from 'react-router-dom';
 import Home from './components/home-header/home';
 import Aboutus from './components/about-us/Aboutus';
@@ -11,12 +11,17 @@ import Cellgold from './components/cash for silver gold coins/Cashforcoins';
 import './App.css';
 import GeocodingMap from './components/geocoding/geocodingMap';
 import GoldBuyerLandingPage from './components/home-header/GoldBuyerLandingPage';
+import ScrollPopupForm from './components/scrollpopup/scrollPopUpForxm';
 // import Toggler from './components/toggler/toggler';
 function App() {
+  useEffect(() => {
+    // Your effect logic here
+  }, []);
 
   return (
     <>
       {/* <GoldBuyerLandingPage /> */}
+      <ScrollPopupForm />
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/aboutus' element={<Aboutus />} />

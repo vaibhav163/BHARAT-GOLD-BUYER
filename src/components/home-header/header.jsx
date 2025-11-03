@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import logo from '../../assets/logo.png';
 import './header.css';
@@ -9,6 +9,13 @@ import Home from '../../assets/home.png';
 // import headerImage from '../../assets/header-image.png'; // Replace with your actual image path
 
 const Header = () => {
+  const locateus=()=>{
+    window.location.href="https://maps.app.goo.gl/2SisYmVYCUaQmpSZ7"
+
+  }
+  const contactus=()=>{
+    window.location.href="/contactus"
+  }
   return (
     <div><div className="hero-container">
         <div className="hero-background">
@@ -32,7 +39,11 @@ const Header = () => {
           </nav>
         {/* Hero Title */}
         <div className="hero-content">
-          <h1 className="hero-title">Cash Against gold and silver coins</h1>
+          <h1 className="hero-title" style={{ marginTop: '50px' }}>Cash Against gold silver and diamonds</h1>
+          <div className="hero-cta">
+            <button className="cta-button" onClick={locateus}>locate us <ChevronRight size={20} /></button>
+          </div>
+          <button className='cta-button' onClick={contactus}>call now <ChevronRight size={20} /></button>
         </div>
       </div></div>
   )

@@ -12,7 +12,7 @@ import weBuyGoldAdImage from '../../assets/wearebuyinggold.png'; // The smaller 
 
 const GoldBuyerLandingPage = () => {
     // Example of using useState for dynamic content or interactions
-    const [showMoreInfo, setShowMoreInfo] = useState(false);
+    // const [showMoreInfo, setShowMoreInfo] = useState(false);
     const [clientCount, setClientCount] = useState(6); // Dynamic client count if needed
 
     const handleGetStartedClick = () => {

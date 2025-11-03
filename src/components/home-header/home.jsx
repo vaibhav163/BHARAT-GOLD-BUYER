@@ -8,6 +8,7 @@ import ServicesSection from './Servicesection';
 import FAQSection from './FAQsection';
 import FooterSection from '../footersection/Footer-section';
 
+
 const Home = () => {
   return (
     <div>

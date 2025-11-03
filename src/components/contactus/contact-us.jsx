@@ -272,6 +272,7 @@ const ContactUs = () => {
               type="submit" 
               className="submit-btn"
               disabled={isSubmitting}
+              onClick={handleSubmit}
             >
               {isSubmitting ? 'Sending...' : 'Send'}
             </button>

@@ -1,6 +1,10 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import './service-section.css';
+import Cag from '../../assets/cag.png';
+import Cas from '../../assets/cas.png';
+import Cad from '../../assets/cad.png';
+import Cac from '../../assets/cac.png';
 
 export default function ServicesSection() {
   const services = [
@@ -8,28 +12,28 @@ export default function ServicesSection() {
       id: 1,
       title: "Cash Against Gold",
       description: "Get instant cash for your gold jewelry, ornaments, and gold items",
-      image: "/api/placeholder/100/100",
+      image: Cag,
       bgColor: "#F5E6A3"
     },
     {
       id: 2,
       title: "Cash For Silver", 
       description: "Convert your silver jewelry and items into immediate cash",
-      image: "/api/placeholder/100/100",
+      image: Cas,
       bgColor: "#E8D5C4"
     },
     {
       id: 3,
       title: "Cash For Diamond",
       description: "Premium rates for diamond jewelry and gemstones",
-      image: "/api/placeholder/100/100", 
+      image: Cad,
       bgColor: "#DDD5C7"
     },
     {
       id: 4,
       title: "Cash For Silver & Gold Coins",
       description: "Best prices for collectible and investment coins",
-      image: "/api/placeholder/100/100",
+      image: Cac,
       bgColor: "#E0D3C1"
     }
   ];
@@ -51,31 +55,30 @@ export default function ServicesSection() {
             <div key={service.id} className="service-card" style={{ '--bg-color': service.bgColor }}>
               <div className="service-image">
                 <div className="image-placeholder">
-                  {/* Gold jewelry illustration */}
-                  {service.id === 1 && (
+                  {/* {service.id === 1 && (
                     <div className="gold-items">
                       <div className="necklace">💍</div>
                       <div className="money-stack">💰</div>
-                    </div>
+                    </div> 
                   )}
-                  
+                   */}
                   {/* Silver items illustration */}
-                  {service.id === 2 && (
+                  {/* {service.id === 2 && (
                     <div className="silver-items">
                       <div className="person-avatar">👩</div>
                     </div>
                   )}
                   
                   {/* Diamond illustration */}
-                  {service.id === 3 && (
+                  {/* {service.id === 3 && (
                     <div className="diamond-items">
                       <div className="diamond">💎</div>
                       <div className="hands">🤝</div>
                     </div>
-                  )}
+                  )} */}
                   
                   {/* Coins illustration */}
-                  {service.id === 4 && (
+                  {/* {service.id === 4 && (
                     <div className="coin-items">
                       <div className="coins-stack">
                         <div className="coin"></div>
@@ -83,7 +86,8 @@ export default function ServicesSection() {
                         <div className="coin"></div>
                       </div>
                     </div>
-                  )}
+                  )}  */}
+                  <img src={service.image} alt={service.title} className="service-img" />
                 </div>
               </div>
               
