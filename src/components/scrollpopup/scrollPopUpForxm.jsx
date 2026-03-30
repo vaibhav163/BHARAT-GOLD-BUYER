@@ -78,7 +78,7 @@ export default function ScrollPopupForm() {
       // Clear status message after 5 seconds
       setTimeout(() => {
         setFormStatus('');
-      }, 5000);
+      }, 5000)          ;
     }
   };
 
