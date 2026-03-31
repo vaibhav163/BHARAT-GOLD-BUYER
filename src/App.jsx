@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Route, Routes ,Link } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Home from './components/home-header/home';
 import Aboutus from './components/about-us/Aboutus';
 import Blog from './components/blog/Blog';
@@ -33,6 +34,7 @@ function App() {
       <Route path='/sell-gold-coins' element={<Cellgold />} />
     </Routes>
     {/* <GeocodingMap /> */}
+    <SpeedInsights />
     </>
   );
 }
