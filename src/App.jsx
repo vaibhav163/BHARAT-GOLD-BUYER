@@ -12,6 +12,7 @@ import './App.css';
 import GeocodingMap from './components/geocoding/geocodingMap';
 import GoldBuyerLandingPage from './components/home-header/GoldBuyerLandingPage';
 import ScrollPopupForm from './components/scrollpopup/scrollPopUpForxm';
+import { Analytics } from "@vercel/analytics/react"
 // import Toggler from './components/toggler/toggler';
 function App() {
   useEffect(() => {
