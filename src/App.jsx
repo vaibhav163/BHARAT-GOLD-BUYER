@@ -33,6 +33,7 @@ function App() {
       <Route path='/cash-for-diamond' element={<Cashfordiamond />} />
       <Route path='/sell-gold-coins' element={<Cellgold />} />
     </Routes>
+    <Analytics/>
     {/* <GeocodingMap /> */}
     </>
   );
