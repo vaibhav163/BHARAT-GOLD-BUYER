@@ -32,8 +32,8 @@ const ContactUs = () => {
     {
       icon: "📞",
       title: "Phone Number",
-      info: "+91 95999633093",
-      link: "tel:+9195999633093",
+      info: "+91 9821598950",
+      link: "tel:+919821598950",
     },
     {
       icon: "✉️",
