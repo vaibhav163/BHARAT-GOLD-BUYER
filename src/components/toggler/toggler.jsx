@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Link} from "react-router-dom";
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import Hamburger from "../hamburger/hamburger"
