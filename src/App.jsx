@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Route, Routes ,Link } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Home from './components/home-header/home';
 import Aboutus from './components/about-us/Aboutus';
 import Blog from './components/blog/Blog';
@@ -66,6 +67,7 @@ function App() {
     </Routes>
     <Analytics/>
     {/* <GeocodingMap /> */}
+    <Analytics />
     </>
   );
 }
