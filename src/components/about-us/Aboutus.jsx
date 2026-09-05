@@ -3,9 +3,9 @@ import { ChevronRight } from 'lucide-react';
 import './aboutus.css';
 import SocialAndSearches from '../cash-against gold/SocialAndSearches';
 import Footersection from '../footersection/Footer-section';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo.webp';
 import Toggler from '../toggler/toggler';
-import aboutus from '../../assets/aboutus.png';
+import aboutus from '../../assets/aboutus.webp';
 import { Link } from 'react-router-dom';
 
 const AboutUs = () => {

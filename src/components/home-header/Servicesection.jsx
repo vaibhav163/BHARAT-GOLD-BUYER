@@ -1,10 +1,10 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import './service-section.css';
-import Cag from '../../assets/cag.png';
-import Cas from '../../assets/cas.png';
-import Cad from '../../assets/cad.png';
-import Cac from '../../assets/cac.png';
+import Cag from '../../assets/cag.webp';
+import Cas from '../../assets/cas.webp';
+import Cad from '../../assets/cad.webp';
+import Cac from '../../assets/cac.webp';
 
 export default function ServicesSection() {
   const services = [

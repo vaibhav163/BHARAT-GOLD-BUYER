@@ -3,9 +3,9 @@ import { ChevronDown, ChevronRight } from 'lucide-react';
 import './cashforsilver.css';
 import SocialAndSearches from '../cash-against gold/SocialAndSearches';
 import Footersection from '../footersection/Footer-section';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo.webp';
 import Toggler from '../toggler/toggler';
-import CashforSilver from '../../assets/cashforsilver.png';
+import CashforSilver from '../../assets/cashforsilver.webp';
 import { Link } from 'react-router-dom';
 
 export default function cashforsilver() {
@@ -79,7 +79,7 @@ export default function cashforsilver() {
               <li><b>Receive Instant Cash:</b> Once you agree to the offer, you will receive immediate payment for your gold items.</li>
               <li><b>Hassle-Free Process:</b> We ensure a smooth and transparent process, making it easy for you to sell your gold with confidence.</li>
             </ol>
-            <h3 style={{ color: '#DAA520', fontSize: '1.5rem', paddingBottom: '1rem' }}>Benefits of Getting Cash Against Gold with Standard Gold Buyer in Ghaziabad</h3>
+            <h3 style={{ color: '#DAA520', fontSize: '1.5rem', paddingBottom: '1rem' }}>Benefits of Getting Cash Against Gold with Bharat Gold Buyer in Ghaziabad</h3>
             <ul style={{ paddingBottom: '2rem' , fontSize: '18px', lineHeight: '1.6', margin: 0 }}>
               <li><b>Quick Access to Funds:</b> Get immediate cash for your gold assets without any delays.</li>
               <li><b>Fair Market Value:</b> We offer competitive prices based on current market rates, ensuring you get the best value for your gold.</li>
@@ -219,7 +219,7 @@ export default function cashforsilver() {
             <h2 className="services-title">Our Services</h2>
             
             <p className="services-description">
-              At <strong>Standard Gold Buyer</strong>, we specialize in 
+              At <strong>Bharat Gold Buyer</strong>, we specialize in 
               buying your precious metals and diamonds at the highest market value. 
               Whether you want to sell gold, silver, or diamond valuables, we make the process 
               quick, secure, and rewarding.

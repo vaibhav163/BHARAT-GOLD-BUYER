@@ -37,7 +37,14 @@ export default function BranchesSection() {
             regions to make it easy for you to walk in and 
             sell your valuables:
           </p>
-          
+
+          <p className="branches-description">
+            Our Delhi branch sits right at Wazir Nagar, on the South Extension–Kotla
+            Mubarakpur border — an easy walk-in for customers from South Extension,
+            Kotla Mubarakpur, Wazir Nagar, and nearby Lajpat Nagar looking for a
+            trusted local gold buyer in South Delhi.
+          </p>
+
           <button className="see-more-btn">See More</button>
         </div>
 

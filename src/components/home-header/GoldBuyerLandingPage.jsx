@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import './GoldBuyerLandingPage.css'; // This will be our CSS file
 
 // Import your static assets (replace with your actual paths)
-import logoImage from '../../assets/logo.png'; // e.g., Bharat Gold Buyer logo
-import backgroundImage from '../../assets/cashforgold.png'; // The main background image
-import happyClientsImage1 from '../../assets/aboutus.png'; // Image for happy client avatar
-import happyClientsImage2 from '../../assets/aboutus.png'; // Image for happy client avatar
-import happyClientsImage3 from '../../assets/aboutus.png'; // Image for happy client avatar
-import weBuyGoldAdImage from '../../assets/wearebuyinggold.png'; // The smaller ad image
+import logoImage from '../../assets/logo.webp'; // e.g., Bharat Gold Buyer logo
+import backgroundImage from '../../assets/cashforgold.webp'; // The main background image
+import happyClientsImage1 from '../../assets/aboutus.webp'; // Image for happy client avatar
+import happyClientsImage2 from '../../assets/aboutus.webp'; // Image for happy client avatar
+import happyClientsImage3 from '../../assets/aboutus.webp'; // Image for happy client avatar
+import weBuyGoldAdImage from '../../assets/wearebuyinggold.webp'; // The smaller ad image
 
 const GoldBuyerLandingPage = () => {
     // Example of using useState for dynamic content or interactions
@@ -34,7 +34,7 @@ const GoldBuyerLandingPage = () => {
             {/* Header / Navigation Bar */}
             <header className="header">
                 <div className="logo-section">
-                    <img src={logoImage} alt="Standard Gold Buyer Logo" className="brand-logo" />
+                    <img src={logoImage} alt="Bharat Gold Buyer Logo" className="brand-logo" />
                 </div>
                 <nav className="nav-menu">
                     <ul>

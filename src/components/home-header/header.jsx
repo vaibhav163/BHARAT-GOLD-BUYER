@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import { ChevronDown, ChevronRight } from 'lucide-react';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.webp';
 import './header.css';
 import Toggler from '../toggler/toggler';
 import Hamburger from '../hamburger/hamburger';
-import Logo from '../../assets/logo.png';
-import Home from '../../assets/home.png';
+import Logo from '../../assets/logo.webp';
+import Home from '../../assets/home.webp';
 // import headerImage from '../../assets/header-image.png'; // Replace with your actual image path
 
 const Header = () => {

@@ -1,9 +1,9 @@
 import React from 'react';
 import './features-grid.css';
-import Att from '../../assets/att.png';
-import Ip from '../../assets/ip.png';
-import Tp from '../../assets/tp.png';
-import Cts from '../../assets/cts.png';
+import Att from '../../assets/att.webp';
+import Ip from '../../assets/ip.webp';
+import Tp from '../../assets/tp.webp';
+import Cts from '../../assets/cts.webp';
 
 export default function FeaturesGridSection() {
   return (

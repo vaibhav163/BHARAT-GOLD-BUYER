@@ -2,11 +2,11 @@ import React ,{useEffect} from 'react';
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import './cash-against-gold-header.css';
 import SocialAndSearches from './SocialAndSearches';
-import cashforgold from '../../assets/cashforgold.png';
+import cashforgold from '../../assets/cashforgold.webp';
 import Footersection from '../footersection/Footer-section';
 import {Link} from 'react-router-dom';
 import Hamburger from "../hamburger/hamburger"
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo.webp';
 import Toggler from '../toggler/toggler';
 
 export default function CashAgainstGoldHeader() {
@@ -114,7 +114,14 @@ useEffect(() => {
               <li><b>Receive Instant Cash:</b> Once you agree to the offer, you will receive immediate payment for your gold items.</li>
               <li><b>Hassle-Free Process:</b> We ensure a smooth and transparent process, making it easy for you to sell your gold with confidence.</li>
             </ol>
-            <h3 style={{ color: '#DAA520', fontSize: '1.5rem', paddingBottom: '1rem' }}>Benefits of Getting Cash Against Gold with Standard Gold Buyer in Ghaziabad</h3>
+            <h3 style={{ color: '#DAA520', fontSize: '1.5rem', paddingBottom: '1rem' }}>Release Pledged Gold From a Bank or NBFC Loan</h3>
+            <p style={{ paddingBottom: '2rem' , fontSize: '18px', lineHeight: '1.6', margin: 0 }}>Have you taken a gold loan and pledged your jewellery with a bank or NBFC? <b>Bharat Gold Buyer</b> helps you release pledged gold in Delhi by paying off the outstanding loan amount on your behalf, then purchasing the released gold from you at the current market rate. It's a simple way to pay off your gold loan and sell gold in one visit, without arranging the payoff amount yourself first.</p>
+            <ol style={{ paddingBottom: '2rem' , fontSize: '18px', lineHeight: '1.6', margin: 0 }}>
+              <li><b>Share Loan Details:</b> Tell us the bank/NBFC, outstanding amount, and pledged gold weight.</li>
+              <li><b>We Settle the Loan:</b> We help clear the pledged loan amount to release your gold from the bank.</li>
+              <li><b>Instant Valuation & Payout:</b> Once released, we test and value the gold using our German karat meter and pay you the balance in cash on the spot.</li>
+            </ol>
+            <h3 style={{ color: '#DAA520', fontSize: '1.5rem', paddingBottom: '1rem' }}>Benefits of Getting Cash Against Gold with Bharat Gold Buyer</h3>
             <ul style={{ paddingBottom: '2rem' , fontSize: '18px', lineHeight: '1.6', margin: 0 }}>
               <li><b>Quick Access to Funds:</b> Get immediate cash for your gold assets without any delays.</li>
               <li><b>Fair Market Value:</b> We offer competitive prices based on current market rates, ensuring you get the best value for your gold.</li>
@@ -147,7 +154,7 @@ useEffect(() => {
             <h2 className="services-title">Our Services</h2>
             
             <p className="services-description">
-              At <strong>Standard Gold Buyer</strong>, we specialize in 
+              At <strong>Bharat Gold Buyer</strong>, we specialize in 
               buying your precious metals and diamonds at the highest market value. 
               Whether you want to sell gold, silver, or diamond valuables, we make the process 
               quick, secure, and rewarding.

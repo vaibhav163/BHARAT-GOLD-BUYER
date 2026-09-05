@@ -3,13 +3,13 @@ import { ChevronRight } from 'lucide-react';
 import './blog.css';
 import SocialAndSearches from '../cash-against gold/SocialAndSearches';
 import Footersection from '../footersection/Footer-section';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo.webp';
 import Toggler from '../toggler/toggler';
-import aboutus from '../../assets/aboutus.png';
+import aboutus from '../../assets/aboutus.webp';
 import { Link } from 'react-router-dom';
-import Blogimage1 from './blogimage1.png';
-import Blogimage2 from './blogimage2.png';
-import Blogimage3 from './blogimage3.png';
+import Blogimage1 from './blogimage1.webp';
+import Blogimage2 from './blogimage2.webp';
+import Blogimage3 from './blogimage3.webp';
 
 
 const Blog = () => {
@@ -53,7 +53,7 @@ const Blog = () => {
       image: Blogimage1,
       alt: "Blog Image 1",
       title: "Why Choosing A Local Gold Buyer In Noida And Delhi NCR Makes All The Difference",
-      description: "When it comes to selling your gold, silver, or diamonds, one thing matters as much as price — location. Choosing a local, certified gold buyer can save you time, offer better security, and help you get the maximum value for your valuables. At Standard Gold Buyer, we've created a strong local presence across Delhi NCR [...]",
+      description: "When it comes to selling your gold, silver, or diamonds, one thing matters as much as price — location. Choosing a local, certified gold buyer can save you time, offer better security, and help you get the maximum value for your valuables. At Bharat Gold Buyer, we've created a strong local presence across Delhi NCR [...]",
       bgColor: "#F5F2EF"
     },
     {
@@ -61,7 +61,7 @@ const Blog = () => {
       image: Blogimage2,
       alt: "Blog Image 2  ",
       title: "Where To Sell Gold For Instant Cash In Ghaziabad & Delhi NCR – A Location-Wise Guide",
-      description: "Looking for a trusted place to sell your gold, silver, or diamond items in Delhi NCR? Choosing the right location isn't just about convenience— it's about trust, safety, and getting the maximum value for your jewellery. That's why Standard Gold Buyer is the preferred destination across Delhi, Noida, Gurgaon, Ghaziabad, Faridabad, and Greater Noida. Let's explore [...]",
+      description: "Looking for a trusted place to sell your gold, silver, or diamond items in Delhi NCR? Choosing the right location isn't just about convenience— it's about trust, safety, and getting the maximum value for your jewellery. That's why Bharat Gold Buyer is the preferred destination across Delhi, Noida, Gurgaon, Ghaziabad, Faridabad, and Greater Noida. Let's explore [...]",
       bgColor: "#F5F2EF"
     },
     {
