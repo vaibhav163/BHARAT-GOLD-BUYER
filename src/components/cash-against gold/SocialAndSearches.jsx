@@ -59,7 +59,7 @@ const SocialAndSearches = () => {
     "Gold buyer Delhi NCR",
     "Sell gold for cash Noida",
     "Instant cash for gold Gurgaon",
-    "Gold buying Ghaziabad",
+    "Gold buying south delhi",
     "Cash against gold Faridabad",
     "Sell silver for cash Delhi",
     "Cash for diamond Delhi NCR",
@@ -71,7 +71,7 @@ const SocialAndSearches = () => {
     "How to sell diamond jewellery safely in Delhi NCR",
     "Reliable cash for gold services near me",
     "Sell gold coins for highest value in Delhi NCR",
-    "Top gold buyers in Ghaziabad with instant payment",
+    "Top gold buyers in south delhi with instant payment",
     "Cash for gold Delhi"
   ];
 

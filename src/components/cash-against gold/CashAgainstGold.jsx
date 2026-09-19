@@ -91,8 +91,8 @@ useEffect(() => {
             <div className='main-container-text'>
               <h1 style={{ color: '#DAA520', fontSize: '2rem',
                 paddingBottom: '2rem'
-               }}>Cash Against Gold - Sell cash for gold in Ghaziabad, Noida & Delhi ncr</h1>
-              <p style={{ paddingBottom: '2rem' , fontSize: '18px', lineHeight: '1.6', margin: 0 }}>Are you looking to get <b>instant cash against your gold</b> in Delhi, Noida, Gurgaon, Ghaziabad, Faridabad, or Greater Noida?
+               }}>Cash Against Gold - Sell cash for gold in south delhi, Noida & Delhi ncr</h1>
+              <p style={{ paddingBottom: '2rem' , fontSize: '18px', lineHeight: '1.6', margin: 0 }}>Are you looking to get <b>instant cash against your gold</b> in Delhi, Noida, Gurgaon, south delhi, Faridabad, or Greater Noida?
 <b>Bharat Gold Buyer</b> offers trusted, reliable, and transparent cash-for-gold services with multiple branches across the Delhi NCR area. Get the best value for your gold assets without any hassle!</p>
             </div>
             <h1 style={{ color: '#DAA520', fontSize: '2rem',
@@ -101,7 +101,7 @@ useEffect(() => {
             <p style={{ paddingBottom: '2rem' , fontSize: '18px', lineHeight: '1.6', margin: 0 }} ><b>Bharat Gold Buyer</b> is your trusted partner for selling gold in Noida, Gurgaon, and Delhi NCR. Our commitment to transparency, fair pricing, and customer satisfaction sets us apart. Experience a hassle-free process and get the best value for your gold assets with us.</p>
             <ul style={{ paddingBottom: '2rem' , fontSize: '18px', lineHeight: '1.6', margin: 0 }}>
               <li><b>Trusted and Reliable:</b> With years of experience, we have built a reputation for trust and reliability in the gold buying industry.</li>
-              <li><b>Multiple Branches:</b> Conveniently located branches across Delhi NCR, including Noida, Gurgaon, Ghaziabad, Faridabad, and Greater Noida.</li>
+              <li><b>Multiple Branches:</b> Conveniently located branches across Delhi NCR, including Noida, Gurgaon, south delhi, Faridabad, and Greater Noida.</li>
               <li><b>Transparent Process:</b> We ensure complete transparency in our transactions, providing you with a clear understanding of the valuation and pricing.</li>
               <li><b>Instant Cash:</b> Get immediate payment for your gold, ensuring a quick and efficient selling experience.</li>
               <li><b>Expert Appraisal:</b> Our team of experts provides accurate and fair appraisals based on current market rates.</li>

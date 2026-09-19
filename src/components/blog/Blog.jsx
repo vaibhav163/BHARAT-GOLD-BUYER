@@ -60,8 +60,8 @@ const Blog = () => {
       id: 2,
       image: Blogimage2,
       alt: "Blog Image 2  ",
-      title: "Where To Sell Gold For Instant Cash In Ghaziabad & Delhi NCR – A Location-Wise Guide",
-      description: "Looking for a trusted place to sell your gold, silver, or diamond items in Delhi NCR? Choosing the right location isn't just about convenience— it's about trust, safety, and getting the maximum value for your jewellery. That's why Bharat Gold Buyer is the preferred destination across Delhi, Noida, Gurgaon, Ghaziabad, Faridabad, and Greater Noida. Let's explore [...]",
+      title: "Where To Sell Gold For Instant Cash In south delhi & Delhi NCR – A Location-Wise Guide",
+      description: "Looking for a trusted place to sell your gold, silver, or diamond items in Delhi NCR? Choosing the right location isn't just about convenience— it's about trust, safety, and getting the maximum value for your jewellery. That's why Bharat Gold Buyer is the preferred destination across Delhi, Noida, Gurgaon, south delhi, Faridabad, and Greater Noida. Let's explore [...]",
       bgColor: "#F5F2EF"
     },
     {
@@ -69,7 +69,7 @@ const Blog = () => {
       image: Blogimage3,
       alt: "Blog Image 3",
       title: "Best Gold Buyer In Delhi NCR – How To Get The Best Price For Your Gold In Delhi NCR",
-      description: "How to Get the Best Price for Your Gold in Delhi NCR (Delhi | Noida | Gurgaon | Ghaziabad | Faridabad | Greater Noida) If you're planning to sell your gold and get instant cash, choosing the right gold buyer in Delhi NCR is crucial. With fluctuating gold rates and a growing number of buyers, [...]",
+      description: "How to Get the Best Price for Your Gold in Delhi NCR (Delhi | Noida | Gurgaon | south delhi | Faridabad | Greater Noida) If you're planning to sell your gold and get instant cash, choosing the right gold buyer in Delhi NCR is crucial. With fluctuating gold rates and a growing number of buyers, [...]",
       bgColor: "#F5F2EF",
       // textColor: "white",
       // descriptionColor: "#F5F2EF"

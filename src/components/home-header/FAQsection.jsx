@@ -9,7 +9,7 @@ export default function FAQSection() {
     {
       id: 0,
       question: "Do I Need To Make An Appointment To Visit A Branch?",
-      answer: "No appointment is necessary. You can walk into any of our branches in Delhi, Noida, Gurgaon, Ghaziabad, Faridabad, and Greater Noida during business hours."
+      answer: "No appointment is necessary. You can walk into any of our branches in Delhi, Noida, Gurgaon, south delhi, Faridabad, and Greater Noida during business hours."
     },
     {
       id: 1,

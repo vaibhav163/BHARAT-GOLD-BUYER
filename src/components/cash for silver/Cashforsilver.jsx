@@ -57,8 +57,8 @@ export default function cashforsilver() {
             <div className='main-container-text'>
               <h1 style={{ color: '#DAA520', fontSize: '2rem',
                 paddingBottom: '2rem'
-               }}>Cash Against Silver - Sell cash for silver in Ghaziabad, Noida & Delhi ncr</h1>
-              <p style={{ paddingBottom: '2rem' , fontSize: '18px', lineHeight: '1.6', margin: 0 }}>Are you looking to get <b>instant cash against your silver</b> in Delhi, Noida, Gurgaon, Ghaziabad, Faridabad, or Greater Noida?
+               }}>Cash Against Silver - Sell cash for silver in south delhi, Noida & Delhi ncr</h1>
+              <p style={{ paddingBottom: '2rem' , fontSize: '18px', lineHeight: '1.6', margin: 0 }}>Are you looking to get <b>instant cash against your silver</b> in Delhi, Noida, Gurgaon, south delhi, Faridabad, or Greater Noida?
 <b>Bharat Gold Buyer</b> offers trusted, reliable, and transparent cash-for-silver services with multiple branches across the Delhi NCR area. Get the best value for your silver assets without any hassle!</p>
             </div>
             <h1 style={{ color: '#DAA520', fontSize: '2rem',
@@ -79,7 +79,7 @@ export default function cashforsilver() {
               <li><b>Receive Instant Cash:</b> Once you agree to the offer, you will receive immediate payment for your gold items.</li>
               <li><b>Hassle-Free Process:</b> We ensure a smooth and transparent process, making it easy for you to sell your gold with confidence.</li>
             </ol>
-            <h3 style={{ color: '#DAA520', fontSize: '1.5rem', paddingBottom: '1rem' }}>Benefits of Getting Cash Against Gold with Bharat Gold Buyer in Ghaziabad</h3>
+            <h3 style={{ color: '#DAA520', fontSize: '1.5rem', paddingBottom: '1rem' }}>Benefits of Getting Cash Against Gold with Bharat Gold Buyer in south delhi</h3>
             <ul style={{ paddingBottom: '2rem' , fontSize: '18px', lineHeight: '1.6', margin: 0 }}>
               <li><b>Quick Access to Funds:</b> Get immediate cash for your gold assets without any delays.</li>
               <li><b>Fair Market Value:</b> We offer competitive prices based on current market rates, ensuring you get the best value for your gold.</li>

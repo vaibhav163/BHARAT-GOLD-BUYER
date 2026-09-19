@@ -41,7 +41,7 @@ export default function Coup() {
               recognized as one of the best gold buyers in Delhi NCR, we are 
               offering you the highest market value for gold, silver, and 
               diamonds. are you search for cash for gold near me, or need a 
-              reliable place to sell gold in Delhi, Noida, Ghaziabad, Gurgaon, 
+              reliable place to sell gold in Delhi, Noida, south delhi, Gurgaon, 
               or Faridabad, we make the process quick, secure, and 
               transparent.
             </p>

@@ -13,6 +13,8 @@ import GeocodingMap from './components/geocoding/geocodingMap';
 import GoldBuyerLandingPage from './components/home-header/GoldBuyerLandingPage';
 import ScrollPopupForm from './components/scrollpopup/scrollPopUpForxm';
 import { Analytics } from "@vercel/analytics/react"
+import LocalityPage from './components/locality/LocalityPage';
+import { localities } from './data/localities';
 // import Toggler from './components/toggler/toggler';
 function App() {
   useEffect(() => {
@@ -63,6 +65,9 @@ function App() {
       <Route path="cash-for-silver" element={<Cashforsilver />} />
       <Route path='/cash-for-diamond' element={<Cashfordiamond />} />
       <Route path='/sell-gold-coins' element={<Cellgold />} />
+            {localities.map((loc) => (
+        <Route key={loc.slug} path={`/${loc.slug}`} element={<LocalityPage slug={loc.slug} />} />
+      ))}
     </Routes>
     <Analytics/>
     {/* <GeocodingMap /> */}

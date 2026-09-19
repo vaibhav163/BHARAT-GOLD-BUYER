@@ -9,6 +9,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { render } from './dist-ssr/entry-server.js';
+import { localities } from './src/data/localities.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.join(__dirname, 'dist');
@@ -69,6 +70,17 @@ const routes = [
         { q: 'Do you offer the highest price for old gold?', a: 'We price old gold jewellery, scrap gold, coins and bars based on current market rates and certified purity testing to ensure you get a fair, competitive price.' },
         { q: 'Are you a trusted gold buyer near South Extension and Lajpat Nagar?', a: 'Yes, our branch is located at Wazir Nagar on the South Extension–Kotla Mubarakpur border, serving customers across South Extension, Lajpat Nagar, Kotla Mubarakpur and Wazir Nagar in South Delhi.' },
       ]),
+      // One route per locality landing page — content lives in src/data/localities.js
+  // so the React page and this prerendered <title>/meta/schema stay in sync.
+  ...localities.map((loc) => ({
+    path: `/${loc.slug}`,
+    title: loc.metaTitle,
+    description: loc.metaDescription,
+    jsonLd: [
+      LOCAL_BUSINESS_LD,
+      ...(loc.faq ? [faqLd(loc.faq)] : []),
+    ],
+  })),
     ],
   },
   {
