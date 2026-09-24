@@ -10,8 +10,8 @@
   margin: 0 auto;
   padding: 0 20px 40px 20px;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: 40px;
+  grid-template-columns: 1.8fr 0.9fr 0.9fr 1.1fr 1.3fr;
+  gap: 32px;
   align-items: start;
 }
 

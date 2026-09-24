@@ -1,5 +1,5 @@
 import './branch-section.css';
-
+import { localities } from '../../data/localities';
 export default function BranchesSection() {
   const branches = [
     {
@@ -44,7 +44,13 @@ export default function BranchesSection() {
             Kotla Mubarakpur, Wazir Nagar, and nearby Lajpat Nagar looking for a
             trusted local gold buyer in South Delhi.
           </p>
-
+                    <ul className="branches-areas-list">
+            {localities.map((loc) => (
+              <li key={loc.slug}>
+                <a href={`/${loc.slug}`}>{loc.h1}</a>
+              </li>
+            ))}
+          </ul>
           <button className="see-more-btn">See More</button>
         </div>
 

@@ -1,6 +1,7 @@
 import React ,{useEffect} from 'react';
 import { ChevronRight, Phone, Mail, Clock, Facebook, Instagram, Twitter, Linkedin, Youtube } from 'lucide-react';
 import './footer-section.css';
+import { localities } from '../../data/localities';
 
 export default function FooterSection() {
   useEffect(() => {
@@ -37,8 +38,8 @@ export default function FooterSection() {
       }, 1000);`;
     document.body.appendChild(script3);
   }, []);
-  const quickLinks = [
-    { name: "Home", href: "/home" },
+   const quickLinks = [
+    { name: "Home", href: "/" },   // was "/home"
     { name: "About Us", href: "/aboutus" },
     { name: "Our Blog", href: "/blog" },
     { name: "Contact Us", href: "/contactus" }
@@ -48,7 +49,7 @@ export default function FooterSection() {
     { name: "Cash Against Gold", href: "/cash-against-gold" },
     { name: "Cash For Silver", href: "/cash-for-silver" },
     { name: "Cash For Diamond", href: "/cash-for-diamond" },
-    { name: "Cash For Silver Gold Coins", href: "/cash-for-silver-gold-coins" }
+    { name: "Sell Gold & Silver Coins", href: "/sell-gold-coins" }   // was "/cash-for-silver-gold-coins"
   ];
 
   const socialLinks = [
@@ -107,7 +108,18 @@ export default function FooterSection() {
             ))}
           </ul>
         </div>
-
+                {/* Areas We Serve */}
+        <div className="footer-areas">
+          <h3 className="footer-heading">Areas We Serve</h3>
+          <ul className="links-list">
+            {localities.map((loc) => (
+              <li key={loc.slug} className="link-item">
+                <ChevronRight className="link-icon" />
+                <a href={`/${loc.slug}`} className="link-text">{loc.h1}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
         {/* Contact Info */}
         <div className="footer-contact">
           <h3 className="footer-heading">Contact Info</h3>
