@@ -3,6 +3,13 @@
     "file": "bundle/index-CAfyIIyU.js",
     "name": "index",
     "src": "index.html",
-    "isEntry": true
+    "isEntry": true,
+    "assets": [
+      "bundle/logo-DyQYdVSN.webp"
+    ]
+  },
+  "src/assets/logo.webp": {
+    "file": "bundle/logo-DyQYdVSN.webp",
+    "src": "src/assets/logo.webp"
   }
 }
