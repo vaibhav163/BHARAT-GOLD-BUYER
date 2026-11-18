@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-<<<<<<< HEAD
+ 
 Sitemap: https://bharatgoldbuyer.com/sitemap.xml
 =======
 Sitemap: https://www.bharatgoldbuyer.com/sitemap.xml
