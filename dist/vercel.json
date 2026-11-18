@@ -1,0 +1,176 @@
+{
+ "$schema": "https://openapi.vercel.sh/vercel.json",
+ "cleanUrls": false,
+ "trailingSlash": false,
+ "headers": [
+  {
+   "source": "/(.*)",
+   "headers": [
+    {
+     "key": "X-Content-Type-Options",
+     "value": "nosniff"
+    },
+    {
+     "key": "X-Frame-Options",
+     "value": "SAMEORIGIN"
+    },
+    {
+     "key": "Referrer-Policy",
+     "value": "strict-origin-when-cross-origin"
+    },
+    {
+     "key": "Strict-Transport-Security",
+     "value": "max-age=63072000; includeSubDomains"
+    },
+    {
+     "key": "Permissions-Policy",
+     "value": "camera=(), microphone=(), geolocation=()"
+    }
+   ]
+  },
+  {
+   "source": "/images/(.*)",
+   "headers": [
+    {
+     "key": "Cache-Control",
+     "value": "public, max-age=2592000, immutable"
+    }
+   ]
+  },
+  {
+   "source": "/css/(.*)",
+   "headers": [
+    {
+     "key": "Cache-Control",
+     "value": "public, max-age=2592000, immutable"
+    }
+   ]
+  },
+  {
+   "source": "/js/(.*)",
+   "headers": [
+    {
+     "key": "Cache-Control",
+     "value": "public, max-age=2592000, immutable"
+    }
+   ]
+  }
+ ],
+ "redirects": [
+  {
+   "source": "/home",
+   "destination": "/",
+   "statusCode": 301
+  },
+  {
+   "source": "/index.html",
+   "destination": "/",
+   "statusCode": 301
+  },
+  {
+   "source": "/about.html",
+   "destination": "/about",
+   "statusCode": 301
+  },
+  {
+   "source": "/what-we-buy.html",
+   "destination": "/what-we-buy",
+   "statusCode": 301
+  },
+  {
+   "source": "/process.html",
+   "destination": "/process",
+   "statusCode": 301
+  },
+  {
+   "source": "/why-choose-us.html",
+   "destination": "/why-choose-us",
+   "statusCode": 301
+  },
+  {
+   "source": "/our-locations.html",
+   "destination": "/our-locations",
+   "statusCode": 301
+  },
+  {
+   "source": "/gallery.html",
+   "destination": "/gallery",
+   "statusCode": 301
+  },
+  {
+   "source": "/faq.html",
+   "destination": "/faq",
+   "statusCode": 301
+  },
+  {
+   "source": "/blog.html",
+   "destination": "/blog",
+   "statusCode": 301
+  },
+  {
+   "source": "/contact.html",
+   "destination": "/contact",
+   "statusCode": 301
+  },
+  {
+   "source": "/sell-gold.html",
+   "destination": "/sell-gold",
+   "statusCode": 301
+  },
+  {
+   "source": "/cash-for-gold.html",
+   "destination": "/cash-for-gold",
+   "statusCode": 301
+  },
+  {
+   "source": "/sell-silver.html",
+   "destination": "/sell-silver",
+   "statusCode": 301
+  },
+  {
+   "source": "/sell-diamonds.html",
+   "destination": "/sell-diamonds",
+   "statusCode": 301
+  },
+  {
+   "source": "/sell-coins.html",
+   "destination": "/sell-coins",
+   "statusCode": 301
+  },
+  {
+   "source": "/release-pledged-gold.html",
+   "destination": "/release-pledged-gold",
+   "statusCode": 301
+  },
+  {
+   "source": "/gold-rate-today.html",
+   "destination": "/gold-rate-today",
+   "statusCode": 301
+  },
+  {
+   "source": "/gold-purity-testing.html",
+   "destination": "/gold-purity-testing",
+   "statusCode": 301
+  },
+  {
+   "source": "/gold-valuation.html",
+   "destination": "/gold-valuation",
+   "statusCode": 301
+  },
+  {
+   "source": "/privacy-policy.html",
+   "destination": "/privacy-policy",
+   "statusCode": 301
+  },
+  {
+   "source": "/terms-and-conditions.html",
+   "destination": "/terms-and-conditions",
+   "statusCode": 301
+  },
+  {
+   "source": "/sitemap.html",
+   "destination": "/sitemap",
+   "statusCode": 301
+  }
+ ]
+}

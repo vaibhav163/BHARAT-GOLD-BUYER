@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect } from 'react';
 import { Route, Routes ,Link } from 'react-router-dom';
 import Home from './components/home-header/home';
@@ -73,6 +74,13 @@ function App() {
     {/* <GeocodingMap /> */}
     </>
   );
-}
+=======
+import React from "react";
+import { getRoute } from "./routes.jsx";
+import Layout from "./components/Chrome.jsx";
 
-export default App;
+export default function App({ path }) {
+  const route = getRoute(path);
+  return <Layout popup={route.popup}>{route.element}</Layout>;
+>>>>>>> 61ed7d3 (up)
+}
